@@ -1,0 +1,14 @@
+class LC1
+{
+    public:
+    int consecutiveone(int n)
+    {
+    int d=0;
+    while(n!=0)
+    {
+        n=n&(n<<1);
+        d++;
+    }
+    return d;
+    }
+};
